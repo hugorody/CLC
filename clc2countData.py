@@ -52,7 +52,7 @@ for j in csvfiles:
 
 outtable = open("DESeq2input.csv","w") #open output to write
 
-outtable.write("reference," + ",".join(seqoffiles) + "\n") #write the header of the table with the files in order
+outtable.write(",".join(seqoffiles) + "\n") #write the header of the table with the files in order
 
 for i in refcounts.items(): #write the values for each reference header
     outtable.write(i[0] + "," + ",".join(i[1]) + "\n")
